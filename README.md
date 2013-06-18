@@ -8,9 +8,19 @@ If you just use json_encode(), you will get some PHP specific results that makes
 Installation using Composer
 ---------------------------
 
-    php composer.phar install mongo-json
+Create a `composer.json` file in your project root:
 
-P.S. If you haven't already been using this great dependency manager for PHP, you can install it via:
+    {
+        "require": {
+            "mtrbean/mongo-json": "dev-master"
+        }
+    }
+
+Install via composer:
+
+    php composer.phar install
+
+P.S. If you haven't already been using composer for managing your dependency, you can install it via:
 
     curl -sS https://getcomposer.org/installer | php
 
