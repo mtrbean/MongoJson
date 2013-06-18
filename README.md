@@ -8,7 +8,7 @@ If you just use json_encode(), you will get some PHP specific results that makes
 Installation using Composer
 ---------------------------
 
-    php composer.phar install MongoJson
+    php composer.phar install mongo-json
 
 P.S. If you haven't already been using this great dependency manager for PHP, you can install it via:
 

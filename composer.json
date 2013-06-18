@@ -1,5 +1,5 @@
 {
-    "name": "mtrbean/MongoJson",
+    "name": "mtrbean/mongo-json",
     "description": "A helper library for serializing MongoDB types to JSON string",
     "keywords": ["database", "json", "mongodb"],
     "license": "MIT",
