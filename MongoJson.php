@@ -59,7 +59,3 @@ class MongoJson extends ArrayObject implements JsonSerializable {
 	}
 
 }
-
-
-$doc = array("_id" => new MongoId, "regex" => new MongoRegex('/^acme.*corp/i'));
-echo MongoJson::extended($doc, JSON_PRETTY_PRINT);
