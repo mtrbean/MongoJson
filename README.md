@@ -25,6 +25,15 @@ P.S. If you haven't already been using composer for managing your dependency, yo
     curl -sS https://getcomposer.org/installer | php
 
 
+Autoload
+--------
+
+You can have the class `MongoJson` autoloaded using the mechanism provided by composer:
+
+```php
+require 'vendor/autoload.php';
+```
+
 Usage
 -----
 
