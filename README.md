@@ -3,7 +3,7 @@ MongoJson
 
 A small library that JSON encode an Mongo document that contains MongoDB-specific types (e.g. MongoDate).
 
-If you just use json_encode(), you will get some PHP specific results that makes it very difficult to interface with other part of your program. This library attempts to implement the 'strict mode' and also the 'javascript (JSONP) mode' defined in http://docs.mongodb.org/manual/reference/mongodb-extended-json/
+If you just use `json_encode()`, you will get some PHP specific results that makes it very difficult to interface with other part of your program. This library attempts to implement the 'strict mode' and also the 'javascript (JSONP) mode' defined in http://docs.mongodb.org/manual/reference/mongodb-extended-json/
 
 Installation using Composer
 ---------------------------
@@ -60,7 +60,7 @@ will print:
     {"dt":new Date(1371525158000)}
 
 ### Options
-You can pass extra option that you can normally use with json_encode()
+You can pass extra options that you can normally use with `json_encode()`
 
 ```php
 $doc = array("_id" => new MongoId, "regex" => new MongoRegex('/^acme.*corp/i'));
