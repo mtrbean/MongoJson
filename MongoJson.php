@@ -8,7 +8,9 @@
 class MongoJson extends ArrayObject implements JsonSerializable {
 
 	public static function strict(array $doc, $options=0) {
-		return json_encode(new self($doc), $options | JSON_FORCE_OBJECT);
+		if (empty($doc))
+			$options |= JSON_FORCE_OBJECT;
+		return json_encode(new self($doc), $options);
 	}
 
 	public static function extended(array $doc, $options=0) {
