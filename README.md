@@ -12,7 +12,7 @@ Create a `composer.json` file in your project root:
 
     {
         "require": {
-            "mtrbean/mongo-json": "dev-master"
+            "mtrbean/mongo-json": "1.*"
         }
     }
 
