@@ -16,6 +16,10 @@ class MongoStrictTest extends PHPUnit_Framework_TestCase
 		$doc = array("dt" => new MongoDate(1360682361));
 		$encoded = MongoJson::strict($doc);
 		$this->assertEquals('{"dt":{"$date":1360682361000}}', $encoded);
+
+		$doc = array("dt" => new MongoDate(strtotime("2013-06-11T14:52:48+0000")));
+		$encoded = MongoJson::strict($doc);
+		$this->assertEquals('{"dt":{"$date":1370962368000}}', $encoded);
 	}
 
 	public function testObjectId()

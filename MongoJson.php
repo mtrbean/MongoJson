@@ -25,7 +25,7 @@ class MongoJson extends ArrayObject implements JsonSerializable {
 			$var = array('$oid' => (string)$var);
 		}
 		elseif ($var instanceof MongoDate) {
-			$ts = $var->sec * 1000 + $var->usec; 
+			$ts = $var->sec * 1000 + $var->usec / 1000; 
 			$var = array('$date' => $ts);
 		}
 		elseif ($var instanceof MongoRegex) {
